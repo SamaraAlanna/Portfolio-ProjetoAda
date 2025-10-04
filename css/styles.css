@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7f7;
+}
+
+header {
+  background-color: #ffffff;
+  height: 80px;
+}
+
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+}
+
+header #navbar .nav-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+}
+header #navbar .nav-list .nav-item a:hover {
+  color: #777;
+  transition: 0.3s;
+}
+
+/* banner */
+
+main #banner {
+  display: flex;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+main #banner .content-banner .content-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-top: 100px;
+  padding: 20px 0px;
+}
+
+main #banner .content-banner .content-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 500px;
+}
+
+main #banner .banner-img {
+  border-radius: 50%;
+  max-width: 610px;
+  padding: 50px 100px;
+}
+
+main #banner .content-banner .content-button {
+  margin-top: 38px;
+  background-color: #ecb7d4;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 7px;
+  padding: 8px 20px;
+  border: none;
+}
+
+@media (max-width: 1018px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  main #banner .banner-img {
+    padding: 0px;
+  }
+}
